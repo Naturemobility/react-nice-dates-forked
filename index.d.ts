@@ -1,6 +1,6 @@
-declare module '@axel-dev/react-nice-dates' {
-  import * as React from 'react';
-  import * as Locale from 'date-fns';
+declare module "@bjarkehs/react-nice-dates" {
+  import * as Locale from "date-fns";
+  import * as React from "react";
 
   type DateChangeCallBack = (date: Date | null) => void;
 
@@ -14,7 +14,7 @@ declare module '@axel-dev/react-nice-dates' {
     onFocus: () => void;
   }
 
-  type DefaultModifiers = 'disabled' | 'selected' | 'today';
+  type DefaultModifiers = "disabled" | "selected" | "today";
   type ModifierMatcher = (date: Date) => boolean;
 
   type Modifiers = { [key in DefaultModifiers | string]: ModifierMatcher };
@@ -48,7 +48,7 @@ declare module '@axel-dev/react-nice-dates' {
     format?: string;
   }
 
-  type DateRangeFocus = 'startDate' | 'endDate';
+  type DateRangeFocus = "startDate" | "endDate";
 
   interface DateRangePickerChildrenProps {
     startDateInputProps: InputProps;
